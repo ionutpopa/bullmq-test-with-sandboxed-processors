@@ -30,7 +30,7 @@ const main = async () => {
     }
     // Add 10 jobs in queue 2
     for (let i = 0; i < 10; i++) {
-        await queue2.add(`sandboxed-job-${i}`, { text: `normal-job-${i}` }, queueSettings)
+        await queue2.add(`sandboxed-job-${i}`, { text: `special-job-${i}` }, queueSettings)
     }
 
     await queue1.close()
