@@ -25,11 +25,11 @@ const main = async () => {
 
     console.log("Setting up both queues and adding 10 jobs for each queue")
     // Add 10 jobs in queue 1
-    for (let i = 0; i < 9; i++) {
+    for (let i = 0; i < 10; i++) {
         await queue1.add(`normal-job-${i}`, { text: `normal-job-${i}` }, queueSettings)
     }
     // Add 10 jobs in queue 2
-    for (let i = 0; i < 9; i++) {
+    for (let i = 0; i < 10; i++) {
         await queue2.add(`sandboxed-job-${i}`, { text: `normal-job-${i}` }, queueSettings)
     }
 
